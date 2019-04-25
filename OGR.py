@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-#Ejercicio 1 parte I
 #Propósito: Utilizar métodos de OGR para consultar información vectorial, modificarla o eliminarla.
 #Autor: Alicia Pizarro
 #Fecha: 30/12/2017
 
+#IMPORTACIÓN DE MÓDULOS 
 import ogr
 import os
 import time

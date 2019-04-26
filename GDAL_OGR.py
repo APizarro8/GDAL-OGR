@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-#Práctica: 4 parte II
-#Ejercicio 1 
 #Propósito:Manejar los métodos de GDAL para consultar información sobre el dataset vectorial.
 #Mostar valores de los pixeles parar todas las bandas del arcivo .img para los puntos en el .shp
 #Utilizar método de imagen completa
 #Autor: Alicia Pizarro
 #Fecha: 01/12/2017
 
+## IMPORTACION DE LIBRERIAS
 import gdal 
 import ogr
 import os
@@ -14,7 +13,7 @@ import sys
 from gdal import*
 
 #Establecer el directorio de trabajo
-path = 'D:\\Practica4_py\\archivos_apoyo_practica6_parteII'
+path = 'xxDATAxx'
 os.chdir(path)
 
 # Driver para el formato .jpg
@@ -23,7 +22,7 @@ driver = gdal.GetDriverByName('HFA')
 gdal.AllRegister()
 
 #Abrir la imagen
-Raster = ('Arctic_BSST200901b.img')
+Raster = ('xxxDATAxxx.img')
 ds = gdal.Open(Raster, GA_ReadOnly)
 
 if ds is None:

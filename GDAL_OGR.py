@@ -10,7 +10,10 @@ import gdal
 import ogr
 import os
 import sys
+import time
 from gdal import*
+
+tiempo_inicial = time.time()
 
 #Establecer el directorio de trabajo
 path = 'xxDATAxx'
@@ -93,3 +96,13 @@ print "\n"
 #Se destruyen los objetos creados.  
 shapefile.Destroy()
 feature.Destroy()
+
+######################################################################################
+tiempo_final = time.time()
+tiempo_empleado = tiempo_final - tiempo_inicial
+print "El tiempo al comienzo ha sido de: ", tiempo_inicial, "segundos"
+print "El tiempo al final ha sido de: ", tiempo_final, "segundos"
+print "El programa ha tardado: ", tiempo_empleado, "segundos"
+print "El número de vandalismos en el archivo delitos es de: ", count
+
+#########################################################################################

@@ -8,6 +8,8 @@ import ogr
 import os
 import time
 
+tiempo_inicial = time.time()
+
 #Establecer el espacio de trabajo
 path = 'xxxDATAxxx'
 os.chdir(path)

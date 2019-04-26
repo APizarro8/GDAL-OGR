@@ -105,4 +105,6 @@ print "El tiempo al final ha sido de: ", tiempo_final, "segundos"
 print "El programa ha tardado: ", tiempo_empleado, "segundos"
 print "El número de vandalismos en el archivo delitos es de: ", count
 
+######################################## FINISH ########################################
 #########################################################################################
+

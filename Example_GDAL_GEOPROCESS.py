@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
-#Práctica: 4 parte II
-#Ejercicio 2 
 #Propósito:Con los ráster del Corredor del Henares realizar tareas de geoprocesamiento. 
 #Autor: Alicia Pizarro
 #Fecha: 02/12/2017
 
-
+## Importación de librerías
 import gdal
 import os
 import sys
 import osr
 
 #Establecer el espacio de trabajo
-path = 'D:\\Practica4_py\\rasters_ejercicio4'
+path = 'xxDATAxx'
 os.chdir(path)
 
 # Se registran todos los drivers. 
 gdal.AllRegister()
 
 # Imágenes consideradas para la realizacion del mosaico. 
-MDT_1 = 'MDT25-0536-H30.asc'
-MDT_2 = 'MDT25-0535-H30.asc'
+MDT_1 = 'MDTxxx.asc'
+MDT_2 = 'MDTxxx.asc'
 
 #Creación de listas 
 filas = []
@@ -104,6 +102,5 @@ bandaMosaico.WriteArray(data_1, xOffset_1, yOffset_1)
 data_2 = banda_2.ReadAsArray(0, 0, columnas_2, filas_2)
 bandaMosaico.WriteArray(data_2, xOffset_2, yOffset_2)
 
-
-
-
+################################################### FINISH #########################################################
+####################################################################################################################
